@@ -1,0 +1,376 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+
+
+/*helpers  odstępy góra dół*/
+
+section {
+    padding: 60px 0;
+}
+
+#main-nav {
+    background-color: transparent;
+    border: 0;
+    font-family: font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+#main-nav.scrolled {
+    background-color: rgba(14, 216, 214, 0.85);
+}
+
+#main-nav ul>li>a:hover,
+#main-nav .navbar-brand:hover {
+    color: aqua;
+}
+
+
+/*header*/
+
+#main-header {
+    height: 100vh;
+    background-image: url("../img/header-background.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/header-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-header .header-inner {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+#main-header .header-inner h3 {
+    font-family: 'RobotoSlab';
+    font-style: italic;
+    font-size: 36px;
+    margin-top: 0;
+}
+
+#main-header .header-inner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#main-header .header-inner button {
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+#main-header .header-inner button {
+    background-color: aquamarine;
+}
+
+#main-headr .header-inner button:hover {
+    background-color: aliceblue;
+    color: azure;
+}
+
+#services i {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid #0ed8d6;
+    background-color: #0ed8d6;
+    color: #ffffff;
+    font-size: 3em;
+    transition: all 0.4s;
+}
+
+#services i:hover {
+    transform: rotate(360deg);
+    background-color: #ffffff;
+    color: #0ed8d6;
+}
+
+#services h1 {
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#services p {
+    font-family: 'RobotoSlab';
+    font-style: italic;
+    color: gray;
+    font-size: 150%;
+}
+
+#services .row h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+    color: black;
+}
+
+#services .row div {
+    font-family: 'RobotoSlab';
+    color: gray;
+}
+
+#portfolio {
+    background-color: #f7f7f7;
+}
+
+#portfolio .single-portfolio-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#portfolio .container .row h1 {
+    font-weight: 150;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#portfolio .container .row h2 {
+    font-family: 'RobotoSlab';
+    font-style: italic;
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+}
+
+#portfolio .portfolio-image-container {
+    height: 300px;
+    overflow: hidden;
+}
+
+#portfolio #portfolio-item-1 {
+    background-image: url("../img/portfolio1.jpg");
+}
+
+#portfolio #portfolio-item-2 {
+    background-image: url("../img/portfolio2.jpg");
+}
+
+#portfolio #portfolio-item-3 {
+    background-image: url("../img/portfolio3.jpg");
+}
+
+#portfolio #portfolio-item-4 {
+    background-image: url("../img/portfolio4.jpg");
+}
+
+#portfolio #portfolio-item-5 {
+    background-image: url("../img/jan-nowak.jpg");
+}
+
+#portfolio #portfolio-item-6 {
+    background-image: url("../img/header-background.jpg");
+}
+
+#portfolio .portfolio-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4s;
+}
+
+#portfolio .portfolio-image:hover {
+    transform: scale(1.2);
+}
+
+#portfolio .portfolio-item-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 216, 214, 0.85);
+    opacity: 0;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+#portfolio .portfolio-item-mask:hover {
+    opacity: 1;
+}
+
+#portfolio .single-portfolio-item .portfolio-image-container .portfolio-image i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: white;
+}
+
+#about .container .row h1 {
+    font-weight: 150;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#about .container .row h2 {
+    font-family: 'RobotoSlab';
+    font-style: italic;
+    color: gray;
+    font-size: 150%;
+    text-align: center;
+}
+
+#about .about-image-container {
+    height: 300px;
+    overflow: hidden;
+}
+
+#about #about-item-1 {
+    background-image: url("../img/team/man-1.jpg");
+}
+
+#about #about-item-2 {
+    background-image: url(../img/team/man-2.jpg);
+    
+}
+
+#about #about-item-3 {
+    background-image: url(../img/team/woman-1.jpg);
+}
+
+#about .about-image {
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4s;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#about h3 {
+    font-weight: 150;
+    font-family:'Montserrat', sans-serif ;
+    color: black;
+    text-align: center;
+   
+}
+
+ #about p {
+    font-family: 'RobotoSlab';
+    font-style: italic;
+    color: gray;
+    font-size: 20px;
+     text-align: center;
+    
+}
+
+#about .team-social {
+    border-radius: 50%;
+    font-size: 4em;
+    height: 50%;
+    width: 50%;
+    line-height: 50px;
+    color: #ffffff;
+    margin: 0 auto;
+    transition: all 0.4s;
+    text-align: center;
+   
+  
+}
+
+#about .team-social:hover {
+    color: #0ed8d6;
+}
+
+#contact {
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-image: url(../img/footer/world-map.jpg);
+    
+}
+
+#contact h2
+#contact p {
+    color: #ffffff;
+    font-family: 'RobotoSlab';
+    font-weight: 150;
+    
+    
+}
+
+#contact input:not([type="submit"]),
+#contact textarea {
+    width: 100%;
+    border: 2px solid #e0e0eb;
+}
+
+#contact input,
+#contact textarea {
+    text-transform: uppercase;
+    padding: 15px;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+}
+
+#contact input:not(:last-child) {
+    margin-bottom: 30px;
+}
+#contact input [type="submit"] {
+    margin-top: 30px;
+}
+
+/* all */
+::-webkit-input-placeholder { color:#777; }
+::-moz-placeholder { color:#777; } /* firefox 19+ */
+:-ms-input-placeholder { color:#777; } /* ie */
+input:-moz-placeholder { color:#777; }
+
+/*footer*/
+#main-footer{
+    padding: 10px 0;
+    background-image: url("../img/portfolio4.jpg");
+}
+
+#main-footer #footer-nav,
+#main-footer .copyright {
+   line-height: 50px;
+    margin: 0;
+}
+
+#main-footer #footer-nav,
+#main-footer .social {
+    text-align: center;
+}
+
+#main-footer #footer-nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#main-footer #footer-nav ul li a {
+    text-decoration: none;
+    color: #777;
+    transition: all 0.4s;
+}
+
+#main-footer #footer-nav ul li a:hover {
+    color: #0ed8d6;
+}
+
+.socials-icons {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    line-height: 50px; 
+    color: #fff;
+    border-radius: 50%;
+    font-size: 3em;
+    margin-right: 10px;
+    transition: all 0.4s;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    padding-top: 19px;
+  
+    
+}
+
+ .socials-icons:hover {
+    background-color: rgb(14,216,214);
+}
+ 
